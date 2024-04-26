@@ -1,0 +1,39 @@
+
+
+body, canvas {
+    height: 100%;
+    margin: 0;
+    background: black;
+    color: green;
+    font-family: 'Courier New', monospace;
+    overflow: visible;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5; /* Make the background effect more subtle */
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+section {
+    padding: 20px;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+#matrixHeader {
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    border-bottom: 1px solid green;
+}
