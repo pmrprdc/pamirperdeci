@@ -9,6 +9,12 @@ body, canvas {
     overflow: visible;
 }
 
+body img {
+    margin: 0 auto;
+    opacity: 50%;
+    width: 100%;
+}
+
 canvas {
     position: fixed;
     top: 0;
@@ -24,9 +30,13 @@ canvas {
 }
 
 section {
+    max-width: 80%;
+    line-height: 2rem;
+    margin: 0 auto;
     padding: 20px;
     margin-top: 20px;
     animation: fadeIn 2s ease-out;
+    padding: 25%;
 }
 
 #matrixHeader {
