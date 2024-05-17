@@ -9,11 +9,24 @@ body, canvas {
     overflow: visible;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    animation: reverse 3s ease-out;
+
+}
+
+
 body img {
     margin: 0 auto;
-    opacity: 50%;
-    width: 100%;
+    opacity:  40%;
+    width: 120%;
+    padding-top: 50px;
+    animation: fadeOut 4s forwards;
+
 }
+
+
 
 canvas {
     position: fixed;
@@ -30,13 +43,14 @@ canvas {
 }
 
 section {
-    max-width: 80%;
+    max-width: 50%;
     line-height: 2rem;
     margin: 0 auto;
-    padding: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
     margin-top: 20px;
-    animation: fadeIn 2s ease-out;
-    padding: 25%;
+    animation: fadeIn 20s ease-out;
+    padding: 10%;
 }
 
 #matrixHeader {
@@ -44,6 +58,3 @@ section {
     font-size: 3em;
 }
 
-h2 {
-    border-bottom: 1px solid green;
-}
