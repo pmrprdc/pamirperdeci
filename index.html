@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            position: relative;
+            width: 100%;
             overflow-x: hidden;
         }
         canvas {
@@ -135,6 +135,18 @@
             const c = document.getElementById("matrixRain");
             const ctx = c.getContext("2d");
 
+            // Characters
+            let matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
+            matrix = matrix.split("");
+
+            let font_size = 10;
+            let columns = c.width / font_size; // Number of columns for the rain
+            let drops = [];
+
+            // X below is the x coordinate
+            for(let x = 0; x < columns; x++)
+                drops[x] = 1; 
+
             // Adjusting canvas size
             function resizeCanvas() {
                 c.width = window.innerWidth;
@@ -146,14 +158,6 @@
             }
             
             resizeCanvas();
-
-            // Characters
-            let matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
-            matrix = matrix.split("");
-
-            let font_size = 10;
-            let columns;
-            let drops;
 
             // Drawing the characters
             function draw() {
