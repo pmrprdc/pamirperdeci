@@ -6,88 +6,104 @@
     <title>Pamir Perdeci</title>
     <link rel="stylesheet" href="./index.css">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-
+    <meta name="description" content="Pamir Perdeci's personal website showcasing his skills, projects, and experience.">
 </head>
 <body>
-    <canvas id="matrixRain"></canvas> <!-- Matrix rain background -->
     <header>
-        <img src="./pmrprdc.jpeg">
+        <img src="./pmrprdc.jpeg" alt="Pamir Perdeci's Photo">
+        <nav>
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
     </header>
+    <section id="introduction">
+        <h1>Pamir Perdeci</h1>
+        <p>Welcome to my personal website. I am a full-stack developer with a passion for creating secure and efficient web applications.</p>
+    </section>
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:pamirperdeci@gmail.com">pamirperdeci@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/pmrprdc">pmrprdc</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/pamirperdeci/">pamirperdeci</a></p>
-        <p>Calendly:  <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/pamirperdeci'});return false;">Schedule time with me</a></p>
-
-    </section>
-    <section id="about">
-        
+        <p>Calendly: <a href="https://calendly.com/pamirperdeci">Schedule time with me</a></p>
     </section>
     <section id="skills">
         <h2>Technical Skills</h2>
-        <ul>
-            <li>Front End: React.js, Redux, Hooks, Context API, Jest, Cypress, Yup, Axios, JavaScript, HTML, CSS</li>
-            <li>Back End: Node.js, Express, SQL, PostgreSQL, Docker, Python, Git CLI, GitHub, VS Code, Vercel, Heroku, Netlify</li>
-            <li>Additional: Agile Project Management, Algorithms, Architecture, Debugging, Deployment</li>
-        </ul>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Front End</h3>
+                <ul>
+                    <li>React.js, Redux, Hooks, Context API, Jest, Cypress, Yup, Axios, JavaScript, HTML, CSS</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>Back End</h3>
+                <ul>
+                    <li>Node.js, Express, SQL, PostgreSQL, Docker, Python, Git CLI, GitHub, VS Code, Vercel, Heroku, Netlify</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>Additional</h3>
+                <ul>
+                    <li>Agile Project Management, Algorithms, Architecture, Debugging, Deployment</li>
+                </ul>
+            </div>
+        </div>
     </section>
     <section id="projects">
         <h2>Projects</h2>
-        <h2>Authentication & Testing, Back End Project - React | Node | Express</h2>
-        <ul>
-            <li>Developed secure Node.js app with user auth, bcryptjs hashing, JWTs, and protected routes.</li>
-        </ul>
-        
-        <h2>Client Authorization Project</h2>
-        <ul>
-            <li>Mastered token-based user auth, ensuring secure access and improving application reliability.</li>
-        </ul>
-    
-        <h2>WEB Api Project, Full Stack Developer - React | Node</h2>
-        <ul>
-            <li>Built full-stack Node.js API with CRUD operations, Express.js endpoints, SQLite DB, and manual API testing.</li>
-            <li><a href="GitHub">GitHub</a> | <a href="Website">Website</a></li>
-        </ul>
-    
-        <h2>Widget Logic In React, Full Stack Developer - React | Node</h2>
-        <ul>
-            <li>Created interactive grid in React, aligning with prototype’s DOM, and integrating API responses.</li>
-        </ul>
-        <a> www.ghostracr.com</a>
-        <!-- List projects with links -->
-        <p>Authentication & Testing: Developed robust user auth system with bcryptjs and JWTs, enhancing application security.</p>
-        <p>API Integration & Data Visualization: Integrated front-end application with an external API, displaying dynamic visualizations.</p>
+        <div class="project">
+            <h3>Authentication & Testing, Back End Project - React | Node | Express</h3>
+            <p>Developed a secure Node.js app with user authentication, bcryptjs hashing, JWTs, and protected routes.</p>
+            <img src="path/to/project-image.jpg" alt="Screenshot of Authentication & Testing Project">
+        </div>
+        <div class="project">
+            <h3>Client Authorization Project</h3>
+            <p>Mastered token-based user authentication, ensuring secure access and improving application reliability.</p>
+            <img src="path/to/project-image.jpg" alt="Screenshot of Client Authorization Project">
+        </div>
+        <div class="project">
+            <h3>WEB API Project, Full Stack Developer - React | Node</h3>
+            <p>Built a full-stack Node.js API with CRUD operations, Express.js endpoints, SQLite DB, and manual API testing.</p>
+            <a href="https://github.com">GitHub</a> | <a href="https://website.com">Project Website</a>
+            <img src="path/to/project-image.jpg" alt="Screenshot of WEB API Project">
+        </div>
+        <div class="project">
+            <h3>Widget Logic In React, Full Stack Developer - React | Node</h3>
+            <p>Created an interactive grid in React, aligning with prototype’s DOM, and integrating API responses.</p>
+            <a href="https://www.ghostracr.com">www.ghostracr.com</a>
+            <img src="path/to/project-image.jpg" alt="Screenshot of Widget Logic Project">
+        </div>
     </section>
     <section id="experience">
         <h2>Experience</h2>
-        <h3>IT Support Specialist</h3>
-        <p>Pointe South Middle/Elementary School, IT Support Specialist (2019-2020): Spearheaded remote learning support during COVID-19.</p>
+        <div class="experience">
+            <h3>IT Support Specialist</h3>
+            <p><strong>Pointe South Middle/Elementary School (2019-2020)</strong>: Spearheaded remote learning support during COVID-19. Provided technical assistance and training to staff and students.</p>
+        </div>
     </section>
     <section id="education">
         <h2>Education</h2>
         <ul>
             <li>GED, Lassiter High School - Marietta GA</li>
-            <li>Hobart &  William Smith Colleges, Geneva NY</li>
+            <li>Hobart & William Smith Colleges, Geneva NY</li>
             <li>Santa Monica College</li>
-            <li>Santa Barbara City Collge</li>
-            <li>Arizona State Univercity</li>
+            <li>Santa Barbara City College</li>
+            <li>Arizona State University</li>
             <li>BloomTech, Graduate of the Full Stack Web Development Program, March 2024</li>
             <li>Freemote, Freelance developer bootcamp focused on Shopify ecommerce, August 2022</li>
             <li>Google IT Support Specialist Certificate, August 2020</li>
         </ul>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:pamirperdeci@gmail.com">pamirperdeci@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/pmrprdc">pmrprdc</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/pamirperdeci/">pamirperdeci</a></p>
-        <p>Calendly:  <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/pamirperdeci'});return false;">Schedule time with me</a></p>
-
-    </section>
+    <footer>
+        <p>&copy; 2024 Pamir Perdeci</p>
+    </footer>
     <script src="script.js"></script>
-   
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 </html>
