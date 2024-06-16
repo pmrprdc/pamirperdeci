@@ -14,21 +14,51 @@
             height: 100%;
             width: 100%;
             overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
         }
         canvas {
             position: fixed;
             top: 0;
             left: 0;
-            z-index: -1;
+            z-index: 0;
             width: 100%;
             height: 100%;
+            opacity: 0.5;
         }
         header, section, footer {
             position: relative;
             z-index: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        header img {
+            width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #e0e0e0;
+            font-weight: bold;
         }
         section {
-            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h1, h2, h3 {
+            color: #00ff00;
+        }
+        footer {
+            text-align: center;
         }
     </style>
 </head>
@@ -47,74 +77,74 @@
         </nav>
     </header>
     <section id="introduction">
-        <h1>Pamir Perdeci</h1>
-        <p>Welcome to my personal website. I am a full-stack developer with a passion for creating secure and efficient web applications.</p>
+        <h1 id="intro-text">Pamir Perdeci</h1>
+        <p id="intro-description">Welcome to my personal website. I am a full-stack developer with a passion for creating secure and efficient web applications.</p>
     </section>
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:pamirperdeci@gmail.com">pamirperdeci@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/pmrprdc">pmrprdc</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/pamirperdeci/">pamirperdeci</a></p>
-        <p>Calendly: <a href="https://calendly.com/pamirperdeci">Schedule time with me</a></p>
+        <h2 id="contact-title">Contact</h2>
+        <p id="contact-email">Email: <a href="mailto:pamirperdeci@gmail.com">pamirperdeci@gmail.com</a></p>
+        <p id="contact-github">GitHub: <a href="https://github.com/pmrprdc">pmrprdc</a></p>
+        <p id="contact-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/pamirperdeci/">pamirperdeci</a></p>
+        <p id="contact-calendly">Calendly: <a href="https://calendly.com/pamirperdeci">Schedule time with me</a></p>
     </section>
     <section id="skills">
-        <h2>Technical Skills</h2>
+        <h2 id="skills-title">Technical Skills</h2>
         <div class="skills-container">
             <div class="skill">
-                <h3>Front End</h3>
-                <ul>
+                <h3 id="skills-frontend-title">Front End</h3>
+                <ul id="skills-frontend">
                     <li>React.js, Redux, Hooks, Context API, Jest, Cypress, Yup, Axios, JavaScript, HTML, CSS</li>
                 </ul>
             </div>
             <div class="skill">
-                <h3>Back End</h3>
-                <ul>
+                <h3 id="skills-backend-title">Back End</h3>
+                <ul id="skills-backend">
                     <li>Node.js, Express, SQL, PostgreSQL, Docker, Python, Git CLI, GitHub, VS Code, Vercel, Heroku, Netlify</li>
                 </ul>
             </div>
             <div class="skill">
-                <h3>Additional</h3>
-                <ul>
+                <h3 id="skills-additional-title">Additional</h3>
+                <ul id="skills-additional">
                     <li>Agile Project Management, Algorithms, Architecture, Debugging, Deployment</li>
                 </ul>
             </div>
         </div>
     </section>
     <section id="projects">
-        <h2>Projects</h2>
+        <h2 id="projects-title">Projects</h2>
         <div class="project">
-            <h3>Authentication & Testing, Back End Project - React | Node | Express</h3>
-            <p>Developed a secure Node.js app with user authentication, bcryptjs hashing, JWTs, and protected routes.</p>
+            <h3 id="project1-title">Authentication & Testing, Back End Project - React | Node | Express</h3>
+            <p id="project1-description">Developed a secure Node.js app with user authentication, bcryptjs hashing, JWTs, and protected routes.</p>
             <img src="path/to/project-image.jpg" alt="Screenshot of Authentication & Testing Project">
         </div>
         <div class="project">
-            <h3>Client Authorization Project</h3>
-            <p>Mastered token-based user authentication, ensuring secure access and improving application reliability.</p>
+            <h3 id="project2-title">Client Authorization Project</h3>
+            <p id="project2-description">Mastered token-based user authentication, ensuring secure access and improving application reliability.</p>
             <img src="path/to/project-image.jpg" alt="Screenshot of Client Authorization Project">
         </div>
         <div class="project">
-            <h3>WEB API Project, Full Stack Developer - React | Node</h3>
-            <p>Built a full-stack Node.js API with CRUD operations, Express.js endpoints, SQLite DB, and manual API testing.</p>
+            <h3 id="project3-title">WEB API Project, Full Stack Developer - React | Node</h3>
+            <p id="project3-description">Built a full-stack Node.js API with CRUD operations, Express.js endpoints, SQLite DB, and manual API testing.</p>
             <a href="https://github.com">GitHub</a> | <a href="https://website.com">Project Website</a>
             <img src="path/to/project-image.jpg" alt="Screenshot of WEB API Project">
         </div>
         <div class="project">
-            <h3>Widget Logic In React, Full Stack Developer - React | Node</h3>
-            <p>Created an interactive grid in React, aligning with prototype’s DOM, and integrating API responses.</p>
+            <h3 id="project4-title">Widget Logic In React, Full Stack Developer - React | Node</h3>
+            <p id="project4-description">Created an interactive grid in React, aligning with prototype’s DOM, and integrating API responses.</p>
             <a href="https://www.ghostracr.com">www.ghostracr.com</a>
             <img src="path/to/project-image.jpg" alt="Screenshot of Widget Logic Project">
         </div>
     </section>
     <section id="experience">
-        <h2>Experience</h2>
+        <h2 id="experience-title">Experience</h2>
         <div class="experience">
-            <h3>IT Support Specialist</h3>
-            <p><strong>Pointe South Middle/Elementary School (2019-2020)</strong>: Spearheaded remote learning support during COVID-19. Provided technical assistance and training to staff and students.</p>
+            <h3 id="experience1-title">IT Support Specialist</h3>
+            <p id="experience1-description"><strong>Pointe South Middle/Elementary School (2019-2020)</strong>: Spearheaded remote learning support during COVID-19. Provided technical assistance and training to staff and students.</p>
         </div>
     </section>
     <section id="education">
-        <h2>Education</h2>
-        <ul>
+        <h2 id="education-title">Education</h2>
+        <ul id="education-list">
             <li>GED, Lassiter High School - Marietta GA</li>
             <li>Hobart & William Smith Colleges, Geneva NY</li>
             <li>Santa Monica College</li>
@@ -126,9 +156,8 @@
         </ul>
     </section>
     <footer>
-        <p>&copy; 2024 Pamir Perdeci</p>
+        <p id="footer-text">&copy; 2024 Pamir Perdeci</p>
     </footer>
-    <script src="script.js"></script>
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -136,12 +165,13 @@
             const ctx = c.getContext("2d");
 
             // Characters
-            let matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
+            let matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%心日一戈口心水口木水金戈戈尸廿竹水月水尸廿金人木水口水女水口";
             matrix = matrix.split("");
 
-            let font_size = 10;
+            let font_size = 15;
             let columns = c.width / font_size; // Number of columns for the rain
             let drops = [];
+            let speed = 10; // Initial speed of the matrix effect
 
             // X below is the x coordinate
             for(let x = 0; x < columns; x++)
@@ -167,18 +197,79 @@
                 ctx.fillStyle = "#0F0"; // Green text
                 ctx.font = font_size + "px arial";
                 for(let i = 0; i < drops.length; i++) {
-                    let text = matrix[Math.floor(Math.random()*matrix.length)];
-                    ctx.fillText(text, i*font_size, drops[i]*font_size);
+                    let text = matrix[Math.floor(Math.random() * matrix.length)];
+                    ctx.fillText(text, i * font_size, drops[i] * font_size);
 
-                    if(drops[i]*font_size > c.height && Math.random() > 0.975)
+                    // Randomly reset drops
+                    if (drops[i] * font_size > c.height && Math.random() > 0.975) {
                         drops[i] = 0;
-
+                    }
                     drops[i]++;
                 }
             }
 
-            setInterval(draw, 35);
+            let interval = setInterval(draw, speed);
+
+            // Speed up the matrix effect on scroll
+            window.addEventListener('scroll', function() {
+                let scrollPosition = window.scrollY;
+                clearInterval(interval);
+                speed = Math.max(1, 30 - Math.min(scrollPosition / 5, 25)); // Increase speed dramatically as you scroll
+                interval = setInterval(draw, speed);
+            });
+
             window.addEventListener('resize', resizeCanvas);
+
+            // Letter-by-letter content display
+            function displayContentLetterByLetter(elementId, content, delay) {
+                const element = document.getElementById(elementId);
+                element.innerHTML = '';
+                let index = 0;
+                const interval = setInterval(() => {
+                    if (index < content.length) {
+                        element.innerHTML += content[index++];
+                    } else {
+                        clearInterval(interval);
+                    }
+                }, delay);
+            }
+
+            // List of elements to display letter by letter
+            const elementsToDisplay = [
+                { id: 'intro-text', content: 'Pamir Perdeci', delay: 100 },
+                { id: 'intro-description', content: 'Welcome to my personal website. I am a full-stack developer with a passion for creating secure and efficient web applications.', delay: 50 },
+                { id: 'contact-title', content: 'Contact', delay: 50 },
+                { id: 'contact-email', content: 'Email: pamirperdeci@gmail.com', delay: 50 },
+                { id: 'contact-github', content: 'GitHub: pmrprdc', delay: 50 },
+                { id: 'contact-linkedin', content: 'LinkedIn: pamirperdeci', delay: 50 },
+                { id: 'contact-calendly', content: 'Calendly: Schedule time with me', delay: 50 },
+                { id: 'skills-title', content: 'Technical Skills', delay: 50 },
+                { id: 'skills-frontend-title', content: 'Front End', delay: 50 },
+                { id: 'skills-frontend', content: 'React.js, Redux, Hooks, Context API, Jest, Cypress, Yup, Axios, JavaScript, HTML, CSS', delay: 50 },
+                { id: 'skills-backend-title', content: 'Back End', delay: 50 },
+                { id: 'skills-backend', content: 'Node.js, Express, SQL, PostgreSQL, Docker, Python, Git CLI, GitHub, VS Code, Vercel, Heroku, Netlify', delay: 50 },
+                { id: 'skills-additional-title', content: 'Additional', delay: 50 },
+                { id: 'skills-additional', content: 'Agile Project Management, Algorithms, Architecture, Debugging, Deployment', delay: 50 },
+                { id: 'projects-title', content: 'Projects', delay: 50 },
+                { id: 'project1-title', content: 'Authentication & Testing, Back End Project - React | Node | Express', delay: 50 },
+                { id: 'project1-description', content: 'Developed a secure Node.js app with user authentication, bcryptjs hashing, JWTs, and protected routes.', delay: 50 },
+                { id: 'project2-title', content: 'Client Authorization Project', delay: 50 },
+                { id: 'project2-description', content: 'Mastered token-based user authentication, ensuring secure access and improving application reliability.', delay: 50 },
+                { id: 'project3-title', content: 'WEB API Project, Full Stack Developer - React | Node', delay: 50 },
+                { id: 'project3-description', content: 'Built a full-stack Node.js API with CRUD operations, Express.js endpoints, SQLite DB, and manual API testing.', delay: 50 },
+                { id: 'project4-title', content: 'Widget Logic In React, Full Stack Developer - React | Node', delay: 50 },
+                { id: 'project4-description', content: 'Created an interactive grid in React, aligning with prototype’s DOM, and integrating API responses.', delay: 50 },
+                { id: 'experience-title', content: 'Experience', delay: 50 },
+                { id: 'experience1-title', content: 'IT Support Specialist', delay: 50 },
+                { id: 'experience1-description', content: 'Pointe South Middle/Elementary School (2019-2020): Spearheaded remote learning support during COVID-19. Provided technical assistance and training to staff and students.', delay: 50 },
+                { id: 'education-title', content: 'Education', delay: 50 },
+                { id: 'education-list', content: 'GED, Lassiter High School - Marietta GA\nHobart & William Smith Colleges, Geneva NY\nSanta Monica College\nSanta Barbara City College\nArizona State University\nBloomTech, Graduate of the Full Stack Web Development Program, March 2024\nFreemote, Freelance developer bootcamp focused on Shopify ecommerce, August 2022\nGoogle IT Support Specialist Certificate, August 2020', delay: 50 },
+                { id: 'footer-text', content: '&copy; 2024 Pamir Perdeci', delay: 50 }
+            ];
+
+            elementsToDisplay.forEach(item => {
+                displayContentLetterByLetter(item.id, item.content, item.delay);
+            });
         });
     </script>
 </body>
